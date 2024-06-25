@@ -52,11 +52,7 @@ If you are login using root , do not use <br>
 ```sh
 sudo apt update
 sudo apt install git -y
-sudo rm -f -r tvboxpwn
-sudo rm -f -r PI-Pwn
 sudo rm -f -r linuxpwn
-sudo rm -f -r linuxpwn2
-sudo rm -f -r linuxpwn3
 sudo systemctl stop pipwn
 git clone https://github.com/zikyu7/linuxpwn
 sudo mkdir /boot/firmware/
