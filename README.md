@@ -52,32 +52,19 @@ If you are login using root , do not use <br>
 ```sh
 sudo apt update
 sudo apt install git -y
+sudo rm -f -r tvboxpwn
+sudo rm -f -r PI-Pwn
+sudo rm -f -r linuxpwn
+sudo rm -f -r linuxpwn2
+sudo rm -f -r linuxpwn3
+sudo systemctl stop pipwn
 git clone https://github.com/zikyu7/linuxpwn
 sudo mkdir /boot/firmware/
-cd tvboxpwn
+cd linuxpwn
 sudo cp -r PPPwn /boot/firmware/
 cd /boot/firmware/PPPwn
 sudo chmod 777 *
 sudo bash install.sh
-```
-
-## UPDATE / REINSTALL
-[for 6th command ,  dont forget to change zikyu to your username armbian ] , in ex your username is tvbox1 , change this command to ( cd/home/tvbox1 ]
-<br>
-
-```sh
-sudo rm -f -r tvboxpwn
-sudo rm -f -r PI-Pwn
-sudo systemctl stop pipwn
-cd /boot/firmware/
-sudo rm -f -r PPPwn
-cd /home/zikyu
-git clone https://github.com/zikyu7/tvboxpwn
-cd tvboxpwn
-sudo cp -r PPPwn /boot/firmware/
-cd /boot/firmware/PPPwn
-sudo chmod 777 *
-bash install.sh
 ```
 <br>
 
